@@ -1,0 +1,29 @@
+\begin{tikzpicture}
+[
+    pie chart,
+    slice type={s1}{blue!30}{vertical lines},
+    slice type={s2}{green!40}{horizontal lines},
+    slice type={s3}{red!30}{dots},
+    slice type={s4}{purple}{bricks},
+    slice type={s5}{blue}{vertical lines},
+    slice type={s6}{cyan}{horizontal lines},
+    slice type={s7}{orange}{dots},
+    pie values/.style={font={\normalsize}},
+    scale=1.45,
+]
+    \pie{}{38.5/s2,61.5/s1}
+    \legend[shift={(1.2cm,1cm)}]{
+        {Model 1 (5)}/s2,
+        {Model 2 (8)}/s1}
+\end{tikzpicture}
+
+% \begin{tikzpicture}
+% \centering
+% \pie
+% [
+%     radius = 2,
+%     color={green!20, orange!20}
+% ]
+%     {38.5/\textbf{Model 1 (5)},
+%      61.5/\textbf{Model 2 (8)}}
+% \end{tikzpicture}

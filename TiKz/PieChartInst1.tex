@@ -1,0 +1,30 @@
+\begin{tikzpicture}
+[
+    pie chart,
+    slice type={s1}{green!60}{dots},
+    slice type={s2}{red!30}{horizontal lines},
+    slice type={s3}{blue!30}{vertical lines},
+    % slice type={s4}{purple}{bricks},
+    % slice type={s5}{blue}{vertical lines},
+    % slice type={s6}{cyan}{horizontal lines},
+    % slice type={s7}{blue}{dots},
+    pie values/.style={font={\normalsize}},
+    scale=1.5,
+]
+    \pie{}{23/s3,30.8/s2,46.2/s1}
+    \legend[shift={(1.2cm,1cm)}]{
+        {Totally Agree (3)}/s3,
+        {Neutral (4)}/s2, 
+        {Agree (6)}/s1}
+\end{tikzpicture}
+
+% \begin{tikzpicture}
+% \pie 
+% [
+%     radius = 2,
+%     color={green!20, blue!20, orange!20}
+% ]
+%     {23/\textbf{Totally Agree (3)},
+%     30.8/\textbf{Neutral (4)}, 
+%     46.2/\textbf{Agree (6)}}
+% \end{tikzpicture}
